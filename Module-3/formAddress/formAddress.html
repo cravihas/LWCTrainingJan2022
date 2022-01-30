@@ -1,0 +1,24 @@
+<template>
+    <lightning-card variant="Narrow" title="Address Form">
+      <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-large-size_4-of-12">
+          <lightning-card variant="Narrow" title="Permanent Address">
+            <p>Enter permanent address as your Identity card</p>
+            <lightning-input type="text" label="Address Line 1" value={addressLine1} onchange={address1Change}></lightning-input>
+            <lightning-input type="text" label="Address Line 2" value={addressLine2} onchange={address2Change}></lightning-input>
+            <lightning-input type="text" label="Landmark" value={Landmark} onchange={landmarkChange}></lightning-input>
+            <lightning-input type="number" label="Zip Code" value={Zipcode} onchange={zipCodeChange}></lightning-input>
+          </lightning-card>
+        </div>
+        <div class="slds-col slds-large-size_4-of-12">
+          <lightning-card variant="Narrow" title="Current Address">
+            <lightning-input type="checkbox"  name="checkbox_value" label="Same as permanent address" onchange={sameAsPermanentChanged} value={sameAsPermanent}></lightning-input>
+            <lightning-input type="text"  label="Address Line 1" value={addressLine1_c}></lightning-input>
+            <lightning-input type="text"  label="Address Line 2" value={addressLine2_c}></lightning-input>
+            <lightning-input type="text"  label="Landmark" value={Landmark_c}></lightning-input>
+            <lightning-input type="number" label="Zip Code" value={Zipcode_c}></lightning-input>
+          </lightning-card>
+        </div>
+      </div>
+    </lightning-card>
+  </template>
