@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Grand Parent" icon-name="standard:groups">
+        <lightning-button variant="destructive" label="Reset" onclick={handleReset} slot="actions">
+        </lightning-button>
+        <div onchildclick={handleChild}>
+            <p class="slds-p-left_medium">{childCount} of 3 childrens selected.</p>
+            <c-parent></c-parent>
+        </div>
+    </lightning-card>
+</template>
